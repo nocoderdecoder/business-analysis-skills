@@ -1,0 +1,94 @@
+[
+  {
+    "id": "revenue-total",
+    "text": "October revenue was $36,000.",
+    "kind": "sum",
+    "reported": 36000,
+    "value": {
+      "column": "revenue",
+      "where": {
+        "month": "2026-10"
+      }
+    }
+  },
+  {
+    "id": "revenue-growth",
+    "text": "Revenue grew 25% from September to October.",
+    "kind": "growth_pct",
+    "reported": 25,
+    "baseline": {
+      "column": "revenue",
+      "where": {
+        "month": "2026-09"
+      }
+    },
+    "current": {
+      "column": "revenue",
+      "where": {
+        "month": "2026-10"
+      }
+    }
+  },
+  {
+    "id": "conversion",
+    "text": "October conversion was 8.8%.",
+    "kind": "ratio_pct",
+    "reported": 8.8,
+    "tolerance": 0.05,
+    "numerator": {
+      "column": "orders",
+      "where": {
+        "month": "2026-10"
+      }
+    },
+    "denominator": {
+      "column": "visits",
+      "where": {
+        "month": "2026-10"
+      }
+    }
+  },
+  {
+    "id": "conversion-change",
+    "text": "Conversion increased by 1.5 percentage points.",
+    "kind": "pp_change",
+    "reported": 1.5,
+    "tolerance": 0.05,
+    "current_numerator": {
+      "column": "orders",
+      "where": {
+        "month": "2026-10"
+      }
+    },
+    "current_denominator": {
+      "column": "visits",
+      "where": {
+        "month": "2026-10"
+      }
+    },
+    "baseline_numerator": {
+      "column": "orders",
+      "where": {
+        "month": "2026-09"
+      }
+    },
+    "baseline_denominator": {
+      "column": "visits",
+      "where": {
+        "month": "2026-09"
+      }
+    }
+  },
+  {
+    "id": "november-total",
+    "text": "November revenue was $40,000.",
+    "kind": "sum",
+    "reported": 40000,
+    "value": {
+      "column": "revenue",
+      "where": {
+        "month": "2026-11"
+      }
+    }
+  }
+]

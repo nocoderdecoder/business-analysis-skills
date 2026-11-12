@@ -1,0 +1,11 @@
+{"id": "r01", "labels": [{"topic": "appearance", "sentiment": "positive", "quote": "looks good"}, {"topic": "delivery", "sentiment": "negative", "quote": "arrived three days late"}]}
+{"id": "r02", "labels": [{"topic": "delivery", "sentiment": "positive", "quote": "Delivery was quick."}, {"topic": "product-condition", "sentiment": "negative", "quote": "The shade was dented."}]}
+{"id": "r03", "labels": [{"topic": "comfort", "sentiment": "positive", "quote": "Comfortable chair."}, {"topic": "assembly", "sentiment": "negative", "quote": "The assembly instructions were hard to follow."}]}
+{"id": "r04", "labels": [{"topic": "product-condition", "sentiment": "positive", "quote": "sturdy"}, {"topic": "assembly", "sentiment": "positive", "quote": "easy to assemble"}]}
+{"id": "r05", "labels": [{"topic": "delivery", "sentiment": "negative", "quote": "Replacement took two weeks"}, {"topic": "support", "sentiment": "negative", "quote": "support did not answer my first email"}]}
+{"id": "r06", "labels": [{"topic": "value", "sentiment": "positive", "quote": "Good value."}, {"topic": "delivery", "sentiment": "positive", "quote": "Delivery was quick."}]}
+{"id": "r07", "labels": [{"topic": "appearance", "sentiment": "positive", "quote": "looks good"}, {"topic": "product-condition", "sentiment": "negative", "quote": "one leg is loose"}]}
+{"id": "r08", "labels": [{"topic": "delivery", "sentiment": "positive", "quote": "Delivery was quick."}]}
+{"id": "r09", "labels": [{"topic": "delivery", "sentiment": "positive", "quote": "Delivery was quick."}]}
+{"id": "r10", "labels": []}
+{"id": "r12", "labels": [{"topic": "support", "sentiment": "mixed", "quote": "Support was friendly but took a week to resolve the issue."}]}

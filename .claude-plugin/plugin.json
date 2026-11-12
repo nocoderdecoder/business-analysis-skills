@@ -1,0 +1,10 @@
+{
+  "name": "business-analysis-skills",
+  "version": "0.1.0",
+  "description": "Customer feedback analysis and numerical report checks with source-level evidence.",
+  "author": {
+    "name": "Anshul Gupta"
+  },
+  "repository": "https://github.com/nocoderdecoder/business-analysis-skills",
+  "license": "MIT"
+}

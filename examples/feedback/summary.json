@@ -1,0 +1,204 @@
+{
+  "input_rows": 12,
+  "eligible_records": 11,
+  "reviewed_records": 11,
+  "skipped": [
+    {
+      "id": "r11",
+      "row": 12,
+      "reason": "empty text"
+    }
+  ],
+  "duplicate_text_groups": [
+    [
+      "r08",
+      "r09"
+    ]
+  ],
+  "counting_rule": "Distinct record ids per topic / all eligible records. A record may have multiple topics. Duplicate text is retained.",
+  "topics": [
+    {
+      "topic": "delivery",
+      "definition": "Arrival speed or timing of a delivered order, including replacement deliveries.",
+      "count": 6,
+      "share_pct": 54.55,
+      "sentiment_counts": {
+        "negative": 2,
+        "positive": 4
+      },
+      "evidence": [
+        {
+          "id": "r01",
+          "source_row": 2,
+          "quote": "arrived three days late",
+          "sentiment": "negative"
+        },
+        {
+          "id": "r02",
+          "source_row": 3,
+          "quote": "Delivery was quick.",
+          "sentiment": "positive"
+        },
+        {
+          "id": "r05",
+          "source_row": 6,
+          "quote": "Replacement took two weeks",
+          "sentiment": "negative"
+        },
+        {
+          "id": "r06",
+          "source_row": 7,
+          "quote": "Delivery was quick.",
+          "sentiment": "positive"
+        },
+        {
+          "id": "r08",
+          "source_row": 9,
+          "quote": "Delivery was quick.",
+          "sentiment": "positive"
+        },
+        {
+          "id": "r09",
+          "source_row": 10,
+          "quote": "Delivery was quick.",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "topic": "product-condition",
+      "definition": "Physical condition, build, or stability of a product.",
+      "count": 3,
+      "share_pct": 27.27,
+      "sentiment_counts": {
+        "negative": 2,
+        "positive": 1
+      },
+      "evidence": [
+        {
+          "id": "r02",
+          "source_row": 3,
+          "quote": "The shade was dented.",
+          "sentiment": "negative"
+        },
+        {
+          "id": "r04",
+          "source_row": 5,
+          "quote": "sturdy",
+          "sentiment": "positive"
+        },
+        {
+          "id": "r07",
+          "source_row": 8,
+          "quote": "one leg is loose",
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "topic": "appearance",
+      "definition": "Appearance or visual design of the product.",
+      "count": 2,
+      "share_pct": 18.18,
+      "sentiment_counts": {
+        "positive": 2
+      },
+      "evidence": [
+        {
+          "id": "r01",
+          "source_row": 2,
+          "quote": "looks good",
+          "sentiment": "positive"
+        },
+        {
+          "id": "r07",
+          "source_row": 8,
+          "quote": "looks good",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "topic": "assembly",
+      "definition": "Ease of assembly or clarity of assembly instructions.",
+      "count": 2,
+      "share_pct": 18.18,
+      "sentiment_counts": {
+        "negative": 1,
+        "positive": 1
+      },
+      "evidence": [
+        {
+          "id": "r03",
+          "source_row": 4,
+          "quote": "The assembly instructions were hard to follow.",
+          "sentiment": "negative"
+        },
+        {
+          "id": "r04",
+          "source_row": 5,
+          "quote": "easy to assemble",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "topic": "support",
+      "definition": "Responsiveness or quality of customer support.",
+      "count": 2,
+      "share_pct": 18.18,
+      "sentiment_counts": {
+        "negative": 1,
+        "mixed": 1
+      },
+      "evidence": [
+        {
+          "id": "r05",
+          "source_row": 6,
+          "quote": "support did not answer my first email",
+          "sentiment": "negative"
+        },
+        {
+          "id": "r12",
+          "source_row": 13,
+          "quote": "Support was friendly but took a week to resolve the issue.",
+          "sentiment": "mixed"
+        }
+      ]
+    },
+    {
+      "topic": "comfort",
+      "definition": "Physical comfort during use.",
+      "count": 1,
+      "share_pct": 9.09,
+      "sentiment_counts": {
+        "positive": 1
+      },
+      "evidence": [
+        {
+          "id": "r03",
+          "source_row": 4,
+          "quote": "Comfortable chair.",
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "topic": "value",
+      "definition": "Value relative to price.",
+      "count": 1,
+      "share_pct": 9.09,
+      "sentiment_counts": {
+        "positive": 1
+      },
+      "evidence": [
+        {
+          "id": "r06",
+          "source_row": 7,
+          "quote": "Good value.",
+          "sentiment": "positive"
+        }
+      ]
+    }
+  ]
+}

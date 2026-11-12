@@ -1,0 +1,173 @@
+{
+  "scope": "Arithmetic on selected CSV rows. A match does not validate metric definitions, causality, or claims omitted from this file.",
+  "counts": {
+    "match": 1,
+    "mismatch": 3,
+    "uncheckable": 1
+  },
+  "claims": [
+    {
+      "id": "revenue-total",
+      "text": "October revenue was $36,000.",
+      "status": "match",
+      "reported": "36000",
+      "calculated": "36000",
+      "difference": "0",
+      "tolerance": "0.01",
+      "unit": "source_units",
+      "evidence": [
+        {
+          "operand": "value",
+          "column": "revenue",
+          "where": {
+            "month": "2026-10"
+          },
+          "source_rows": [
+            4,
+            5
+          ],
+          "sum": "36000"
+        }
+      ]
+    },
+    {
+      "id": "revenue-growth",
+      "text": "Revenue grew 25% from September to October.",
+      "status": "mismatch",
+      "reported": "25",
+      "calculated": "20.0",
+      "difference": "5.0",
+      "tolerance": "0.01",
+      "unit": "percent",
+      "evidence": [
+        {
+          "operand": "current",
+          "column": "revenue",
+          "where": {
+            "month": "2026-10"
+          },
+          "source_rows": [
+            4,
+            5
+          ],
+          "sum": "36000"
+        },
+        {
+          "operand": "baseline",
+          "column": "revenue",
+          "where": {
+            "month": "2026-09"
+          },
+          "source_rows": [
+            2,
+            3
+          ],
+          "sum": "30000"
+        }
+      ]
+    },
+    {
+      "id": "conversion",
+      "text": "October conversion was 8.8%.",
+      "status": "mismatch",
+      "reported": "8.8",
+      "calculated": "6.666666666666666666666666667",
+      "difference": "2.133333333333333333333333333",
+      "tolerance": "0.05",
+      "unit": "percent",
+      "evidence": [
+        {
+          "operand": "numerator",
+          "column": "orders",
+          "where": {
+            "month": "2026-10"
+          },
+          "source_rows": [
+            4,
+            5
+          ],
+          "sum": "400"
+        },
+        {
+          "operand": "denominator",
+          "column": "visits",
+          "where": {
+            "month": "2026-10"
+          },
+          "source_rows": [
+            4,
+            5
+          ],
+          "sum": "6000"
+        }
+      ]
+    },
+    {
+      "id": "conversion-change",
+      "text": "Conversion increased by 1.5 percentage points.",
+      "status": "mismatch",
+      "reported": "1.5",
+      "calculated": "0.6666666666666666666666666670",
+      "difference": "0.8333333333333333333333333330",
+      "tolerance": "0.05",
+      "unit": "percentage_points",
+      "evidence": [
+        {
+          "operand": "current_numerator",
+          "column": "orders",
+          "where": {
+            "month": "2026-10"
+          },
+          "source_rows": [
+            4,
+            5
+          ],
+          "sum": "400"
+        },
+        {
+          "operand": "current_denominator",
+          "column": "visits",
+          "where": {
+            "month": "2026-10"
+          },
+          "source_rows": [
+            4,
+            5
+          ],
+          "sum": "6000"
+        },
+        {
+          "operand": "baseline_numerator",
+          "column": "orders",
+          "where": {
+            "month": "2026-09"
+          },
+          "source_rows": [
+            2,
+            3
+          ],
+          "sum": "300"
+        },
+        {
+          "operand": "baseline_denominator",
+          "column": "visits",
+          "where": {
+            "month": "2026-09"
+          },
+          "source_rows": [
+            2,
+            3
+          ],
+          "sum": "5000"
+        }
+      ]
+    },
+    {
+      "id": "november-total",
+      "text": "November revenue was $40,000.",
+      "status": "uncheckable",
+      "reason": "No rows match {'month': '2026-11'}",
+      "evidence": []
+    }
+  ]
+}

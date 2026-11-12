@@ -1,0 +1,9 @@
+{
+  "delivery": "Arrival speed or timing of a delivered order, including replacement deliveries.",
+  "product-condition": "Physical condition, build, or stability of a product.",
+  "assembly": "Ease of assembly or clarity of assembly instructions.",
+  "support": "Responsiveness or quality of customer support.",
+  "value": "Value relative to price.",
+  "appearance": "Appearance or visual design of the product.",
+  "comfort": "Physical comfort during use."
+}
